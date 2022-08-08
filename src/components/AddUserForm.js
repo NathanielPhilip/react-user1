@@ -35,7 +35,7 @@ function AddUserForm(props) {
           placeholder="Enter email" 
           value={email}
           onChange={(e)=>{
-            setEmail(e.taget.value);
+            setEmail(e.target.value);
           }}
           />
         </Form.Group>
@@ -43,7 +43,7 @@ function AddUserForm(props) {
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Gen</Form.Label>
           <Form.Control
-           type="password" 
+           type="text" 
            placeholder="Password"
            value={gen}
            onChange={(e)=>{
@@ -53,7 +53,7 @@ function AddUserForm(props) {
         </Form.Group>
        
         <Button onClick={handleSubmit} classvariant="primary" type="submit">
-          Submit
+          SUBMIT
         </Button>
       </Form>
       </div>
